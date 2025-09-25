@@ -1,0 +1,16 @@
+body {
+    background-color: #b6ac81;
+    color: rgb(0, 0, 0);
+    font-family: "Macondo", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+    background-color: #585443;
+    color: rgb(255, 255, 255);
+    font-family: "Macondo", cursive;
+}
