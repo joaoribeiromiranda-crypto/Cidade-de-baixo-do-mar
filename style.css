@@ -1,7 +1,7 @@
 body {
-    background-color: #b6ac81;
-    color: rgb(0, 0, 0);
-    font-family: "Macondo", cursive;
+    background-color: #75664a;
+    color: white;
+    font-family: "Limelight", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,25 @@ body {
 }
 
 button {
-    background-color: #585443;
-    color: rgb(255, 255, 255);
-    font-family: "Macondo", cursive;
+    background-color: #9e8c6a;
+    color: white;
+    font-family: "Limelight", sans-serif;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+    max-width: 95%;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
 }
