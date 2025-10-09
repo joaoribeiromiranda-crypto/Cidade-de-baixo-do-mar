@@ -4,94 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-    <title>Em busca da cidade de baixo do mar</title>
+
+    <title>O Chamado de R'lyeh: Em Busca da Cidade Submersa</title>
 </head>
 <body>
     <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="/home/escola/joao vitor 1A/cthulhu.webp" alt="Cenário inicial">
-            <p>O narrador herda os documentos de seu tio-avô, um professor e investigador de cultos secretos, e leva a caixa trancada para casa. </p>
-            <button class="btn-proximo" data-proximo="1">esperar até em casa</button>
-            <button class="btn-proximo" data-proximo="2">a caixa está pesada</button>
+        <div class="passo ativo" id="passo-0" role="region" aria-live="polite">
+            <img src="c.jpeg" alt="Caixa antiga e trancada que contém documentos de um professor.">
+            <p>O narrador herda os documentos de seu tio-avô, um professor e investigador de cultos secretos, e leva a caixa trancada para casa.</p>
+            <button class="btn-proximo" data-proximo="1">Esperar até chegar em casa</button>
+            <button class="btn-proximo" data-proximo="2">A caixa está pesada, investigar agora</button>
         </div>
 
-        <div class="passo" id="passo-1">
-            <p>você decide abrir a caixa quando chegar em casa.</p>
-            <button class="btn-proximo" data-proximo="3">você chega em casa e já abre a caixa</button>
-            <button class="btn-proximo" data-proximo="4">você esquece de abrir a caixa</button>
+        <div class="passo" id="passo-1" role="region" aria-live="polite">
+            <p>Você decide abrir a caixa quando chegar em casa.</p>
+            <button class="btn-proximo" data-proximo="3">Chega em casa e abre a caixa imediatamente</button>
+            <button class="btn-proximo" data-proximo="4">Esquece de abrir a caixa</button>
         </div>
 
-        <div class="passo" id="passo-2">
-            <img src="/home/escola/joao vitor 1A/pexels-photo-4744748.jpeg" alt="Cenário inicial">
-            <p>você decide largar a caixa ali mesmo e seguir sua vida</p>
+        <div class="passo" id="passo-2" role="region" aria-live="polite">
+            <img src="rain-soaked-cardboard-box-in-rainy-parking-lot-photo.jpg" alt="Pessoa largando uma caixa pesada no chão em uma rua.">
+            <p>Você decide largar a caixa ali mesmo e seguir sua vida. O mistério permanece enterrado. **FIM**</p>
         </div>
 
-        <div class="passo" id="passo-3">
-            <p>Ao abrir a caixa, encontra um baixo-relevo de argila com a imagem de um monstro que possui cabeça gigante, tentáculos, corpo escamoso e asas, junto a arquitetura ciclópica ao fundo.</p>
-            <button class="btn-proximo" data-proximo="7">você ficou confuso</button>
+        <div class="passo" id="passo-3" role="region" aria-live="polite">
+            <p>Ao abrir a caixa, encontra um baixo-relevo de argila com a imagem de um monstro que possui cabeça gigante, tentáculos, corpo escamoso e asas, junto a arquitetura ciclópica ao fundo. (É a primeira pista do **Grande Cthulhu**).</p>
+            <button class="btn-proximo" data-proximo="7">Ficou confuso, mas intrigado</button>
         </div>
 
-        <div class="passo" id="passo-4">
-            <p>você se lembra de abrir a caixa</p>
-            <button class="btn-proximo" data-proximo="5">você começa a ler com preguiça</button>
-            <button class="btn-proximo" data-proximo="6">você começa a ler e fica confuso</button>
+        <div class="passo" id="passo-4" role="region" aria-live="polite">
+            <p>Você se lembra da caixa e decide abri-la.</p>
+            <button class="btn-proximo" data-proximo="5">Começa a ler com preguiça</button>
+            <button class="btn-proximo" data-proximo="6">Começa a ler e fica confuso</button>
         </div>
 
-        <div class="passo" id="passo-5">
-            <p>mesmo com preguiça você entende tudo que está escrito</p>
-            <button class="btn-proximo" data-proximo="7">você prosegue</button>
+        <div class="passo" id="passo-5" role="region" aria-live="polite">
+            <p>Mesmo com preguiça, você entende tudo que está escrito sobre os rituais e a entidade.</p>
+            <button class="btn-proximo" data-proximo="7">Prosseguir a leitura</button>
         </div>
 
-        <div class="passo" id="passo-6">
-            <p>se aprofundando mais nas leituras você fica mais e mais confuso</p>
-            <button class="btn-proximo" data-proximo="8"> se questiona se deve continuar</button>
+        <div class="passo" id="passo-6" role="region" aria-live="polite">
+            <p>Aprofundando-se mais nas leituras, você fica mais e mais confuso com a geometria não euclidiana e os nomes estranhos.</p>
+            <button class="btn-proximo" data-proximo="8">Questionar-se se deve continuar</button>
         </div>
 
-        <div class="passo" id="passo-7">
-            <p>A caixa também contém anotações do professor sobre o culto, recortes de jornais, e manuscritos divididos em seções como "Sonho e Trabalho Onírico", que revelam a existência de cultos secretos e referências a uma cidade sinistra chamada R'lyeh. </p>
-            <button class="btn-proximo" data-proximo="9">você para de ler</button>
-            <button class="btn-proximo" data-proximo="10">você continua a ler</button>
+        <div class="passo" id="passo-7" role="region" aria-live="polite">
+            <p>A caixa também contém anotações do professor sobre o culto, recortes de jornais e manuscritos divididos em seções como "Sonho e Trabalho Onírico", que revelam a existência de cultos secretos e referências a uma cidade sinistra chamada **R'lyeh**.</p>
+            <button class="btn-proximo" data-proximo="9">Parar de ler por enquanto</button>
+            <button class="btn-proximo" data-proximo="10">Continuar a ler e investigar</button>
         </div>
 
-        <div class="passo" id="passo-8">
-            <p>você junta pearte por parte e começa e entender tudo</p>
-            <button class="btn-proximo" data-proximo="7">você segue lendo e descobrindo novas coisas</button>
+        <div class="passo" id="passo-8" role="region" aria-live="polite">
+            <p>Você junta parte por parte das anotações e começa a entender a terrível verdade por trás dos sonhos e do culto.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir lendo e descobrindo novas coisas</button>
         </div>
 
-        <div class="passo" id="passo-9">
-            <img src="/home/escola/joao vitor 1A/images.jpeg" alt="Cenário inicial">
-            <p>voce decide parar de ler por enquanto, mas sabe que nunca mais vai ler.</p>
+        <div class="passo" id="passo-9" role="region" aria-live="polite">
+            <img src="download.jpeg" alt="Uma pessoa fechando um livro antigo empoeirado, significando o fim da investigação.">
+            <p>Você decide parar de ler. Embora o mundo pareça normal por fora, o conhecimento adquirido te perturba. Você sabe que nunca mais vai se livrar da sombra de R'lyeh. **FIM**</p>
         </div>
 
-        <div class="passo" id="passo-10">
+        <div class="passo" id="passo-10" role="region" aria-live="polite">
             <p>Os documentos incluem o relato do Inspetor John Legras, que descreve ter tido pesadelos vívidos com cidades ciclópicas e monolitos, juntamente com hieróglifos e uma voz caótica.</p>
-            <button class="btn-proximo" data-proximo="17">você investiga a fundo e ve que as anotações e a imagem levam o professor a investigar a fundo, descobrindo que o baixo-relevo era um objeto de culto.</button>
+            <button class="btn-proximo" data-proximo="17">Investigar a fundo o elo entre as anotações e o baixo-relevo</button>
         </div>
 
-        <div class="passo" id="passo-11">
-            <p>O navio "Alert", que os transportava, descobre uma ilha desconhecida, o lar de R'lyeh, a cidade submersa de Cthulhu, resultando na morte da maior parte da tripulação e no retorno de Johansen, que mantém segredo. </p>
-            <button class="btn-proximo" data-proximo="12">...</button>
+        <div class="passo" id="passo-17" role="region" aria-live="polite">
+            <p>A investigação do professor leva à descoberta de um grupo de mestiços que, após um grande terremoto no Pacífico, se juntam a uma expedição de viagem noturna em busca de um ídolo. Este ídolo é a chave para o despertar.</p>
+            <button class="btn-proximo" data-proximo="11">Seguir a leitura focado no relato do mar</button>
         </div>
 
-        <div class="passo" id="passo-12">
-            <p>A mulher de Johansen entrega ao narrador um manuscrito de seu falecido marido, detalhando a experiência da tripulação em R'lyeh, a geometria não euclidiana da cidade, o despertar acidental de Cthulhu e o subsequente ataque à embarcação.  </p>
-            <button class="btn-proximo" data-proximo="13">você começa a se interesar mais pelo final</button>
+        <div class="passo" id="passo-11" role="region" aria-live="polite">
+            <p>O navio "Alert", que os transportava, descobre uma ilha desconhecida, o lar de **R'lyeh**, a cidade submersa de Cthulhu. O encontro resulta na morte da maior parte da tripulação e no retorno de Johansen, que mantém o segredo.</p>
+            <button class="btn-proximo" data-proximo="12">Continuar a história</button>
         </div>
 
-        <div class="passo" id="passo-13">
-            <img src="/home/escola/joao vitor 1A/gotk66dy70a41.jpg" alt="Cenário inicial">
-            <p>A tripulação consegue escapar, mas o narrador, ao tomar conhecimento de tudo, se torna um alvo dos adoradores, enquanto Cthulhu permanece adormecido na cidade submersa, esperando o alinhamento das estrelas para despertar e trazer o apocalipse. </p>
+        <div class="passo" id="passo-12" role="region" aria-live="polite">
+            <p>A mulher de Johansen entrega ao narrador um manuscrito de seu falecido marido, detalhando a experiência da tripulação em R'lyeh, a geometria não euclidiana da cidade, o despertar acidental de Cthulhu e o subsequente ataque à embarcação.</p>
+            <button class="btn-proximo" data-proximo="13">Você começa a se interessar mais pelo final</button>
         </div>
-        
-        <div class="passo" id="passo-17">
-            <p>A investigação do professor leva à descoberta de um grupo de mestiços que, após um grande terremoto, se juntam a uma expedição de viagem noturna e voltam para a terra em busca de um ídolo. </p>
-            <button class="btn-proximo" data-proximo="11">você segue a leitura focado</button>
+
+        <div class="passo" id="passo-13" role="region" aria-live="polite">
+            <img src="86c1ca768240da8d67accca47e42551f.jpg" alt="A arquitetura medonha e ciclópica de R'lyeh emergindo do oceano.">
+            <p>A tripulação consegue escapar, mas o narrador, ao tomar conhecimento de tudo, se torna um alvo dos adoradores, enquanto **Cthulhu** permanece adormecido na cidade submersa, esperando o alinhamento das estrelas para despertar e trazer o apocalipse. **FIM**</p>
         </div>
     </main>
     <script src="script.js"></script>
-    
+
 </body>
 </html>

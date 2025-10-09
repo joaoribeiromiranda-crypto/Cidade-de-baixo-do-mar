@@ -1,18 +1,84 @@
+:root {
+    /* Paleta de cores inspirada em tons antigos e terrosos (Lovecraftiano) */
+    --bg-dark: #75664A;         /* Fundo principal (Marrom escuro/Azeitona) */
+    --bg-light: #9E8C6A;        /* Cor de destaque/botão (Marrom claro/Bege) */
+    --text-color: #F8F8F8;      /* Cor do texto (Quase branco) */
+    --shadow-color: rgba(0, 0, 0, 0.6); /* Sombra mais escura */
+    --border-radius: 8px;
+}
+
 body {
-    background-color: #75664a;
-    color: white;
-    font-family: "Limelight", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    min-height: 100vh;
     margin: 0;
+
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    
+    font-family: 'Limelight', cursive;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    text-align: center;
+}
+main {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+   
+    box-shadow: 0 8px 20px var(--shadow-color);
+    
+    border: 1px solid var(--bg-light); 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px; 
+    box-shadow: 0 4px 12px var(--shadow-color);
+    border: 1px solid var(--bg-light); 
+}
+
+.passo p {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 button {
-    background-color: #9e8c6a;
-    color: white;
-    font-family: "Limelight", sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1em;
+    padding: 12px 20px; 
+    margin: 10px auto; 
+    border: 2px solid var(--text-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    
+    display: block; 
+    width: 90%; 
+    max-width: 350px;
+}
+
+button:hover {
+    background-color: #bfae8f; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px var(--shadow-color);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px var(--shadow-color);
 }
 
 .passo {
@@ -20,15 +86,5 @@ button {
 }
 
 .passo.ativo {
-    display:block;
-    max-width: 95%;
-}
-
-main {
-    text-align: center;
-    max-width: 90%;
-}
-
-img {
-    max-width: 90%;
+    display: block;
 }
